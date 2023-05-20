@@ -33,7 +33,7 @@ $URL：跳转的 URL 地址
 ```
 此方法可以快速的使用Header Location的方式跳转到一个新的网页
 
-### 2.转为Unicode：
+### 2.文字转unicode：
 使用方法：```$Class->stringToUnicode($Text)```
 
 变量解释：
@@ -41,7 +41,7 @@ $URL：跳转的 URL 地址
 $Text：要编码的文字
 ```
 此方法可以将文字转化为Unicode代码
-### 3.Unicode Encode：
+### 3.unicode转文字：
 使用方法：```$Class->unicodeEncode($Unicode)```
 
 变量解释：
