@@ -69,7 +69,7 @@ $RequireArray：请求数组，如果第一项为true，则不启用此项，直
 ```
 $Connection：SQL连接
 $TableName：数据表名称
-$RequireArray：筛选规则，选择读哪些项，为数组键值对，例： ```array("username" => "Helloworld")```
+$RequireArray：筛选规则，选择读哪些项，为数组键值对，例：array("username" => "Helloworld")
 ```
 此方法可以对某一个SQL连接中的数据表进行读取操作，返回一个SQL Object（别着急，还有更简单的Fetch_Assoc方法可以使用）
 
@@ -91,7 +91,7 @@ $RequireArray：数据键值对(JSON)
 ```
 $Connection：SQL连接
 $TableName：数据表名称
-$RequireArray：匹配规则，为数组键值对，例： ```array("score" => "114514")```
+$RequireArray：匹配规则，为数组键值对，例：array("score" => "114514")
 ```
 此方法可以对某一个SQL连接中的数据表中符合匹配规则的项进行读取操作，返回一个SQL Object（别着急，还有简单的Fetch_Assoc方法可以使用）
 
@@ -102,8 +102,8 @@ $RequireArray：匹配规则，为数组键值对，例： ```array("score" => "
 ```
 $Connection：SQL连接
 $TableName：数据表名称
-$RequireArray：匹配规则，为数组键值对，例： ```array("score" => "114514")```
-$UpdateArray：更新规则，为数组键值对，例： ```array("score" => "1919810")```
+$RequireArray：匹配规则，为数组键值对，例：array("score" => "114514")
+$UpdateArray：更新规则，为数组键值对，例：array("score" => "1919810")
 ```
 此方法可以对某一个SQL连接中的数据表中符合匹配规则的项进行更新操作，返回一个SendQuery后的结果
 
@@ -114,7 +114,7 @@ $UpdateArray：更新规则，为数组键值对，例： ```array("score" => "1
 ```
 $Connection：SQL连接
 $TableName：数据表名称
-$RequireArray：匹配规则，为数组键值对，例： ```array("score" => "114514")```
+$RequireArray：匹配规则，为数组键值对，例：array("score" => "114514")
 ```
 此方法可以对某一个SQL连接中的数据表中符合匹配规则的项进行删除操作，一般没有返回，有错误返回错误信息
 
