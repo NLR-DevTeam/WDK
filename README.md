@@ -62,7 +62,7 @@ $RequireArray：请求数组，如果第一项为true，则不启用此项，直
 ```
 此方法可以快速的获取一个 MySQLi 连接对象，如果错误返回错误信息，如果正确返回 Object
 
-### 2.读数据表：
+### 读数据表：
 使用方法：```$Class->Read_List($Connection, $TableName, $RequireArray{可不填，默认为所有项})```
 
 变量解释：
@@ -73,18 +73,18 @@ $RequireArray：筛选规则，选择读哪些项，为数组键值对，例： 
 ```
 此方法可以对某一个SQL连接中的数据表进行读取操作，返回一个SQL Object（别着急，还有更简单的Fetch_Assoc方法可以使用）
 
-### 2.读数据表：
-使用方法：```$Class->Read_List($Connection, $TableName, $RequireArray{可不填，默认为所有项})```
+### 写数据表：
+使用方法：```$Class->Add_Data($Connection, $TableName, $RequireArray)```
 
 变量解释：
 ```
 $Connection：SQL连接
 $TableName：数据表名称
-$RequireArray：筛选规则，选择读哪些项，为数组键值对，例： ```array("username" => "Helloworld")```
+$RequireArray：数据键值对(JSON)
 ```
-此方法可以对某一个SQL连接中的数据表进行读取操作，返回一个SQL Object（别着急，还有简单的Fetch_Assoc方法可以使用）
+此方法可以对某一个SQL连接中的数据表进行写入操作
 
-### 3.从数据表中寻找数据匹配的数据：
+### 从数据表中寻找数据匹配的数据：
 使用方法：```$Class->Find_Data($Connection, $TableName, $RequireArray)```
 
 变量解释：
@@ -95,7 +95,7 @@ $RequireArray：匹配规则，为数组键值对，例： ```array("score" => "
 ```
 此方法可以对某一个SQL连接中的数据表中符合匹配规则的项进行读取操作，返回一个SQL Object（别着急，还有简单的Fetch_Assoc方法可以使用）
 
-### 4.从数据表中更新数据：
+### 从数据表中更新数据：
 使用方法：```$Class->Update_Data($Connection, $TableName, $RequireArray, $UpdateArray)```
 
 变量解释：
@@ -107,7 +107,7 @@ $UpdateArray：更新规则，为数组键值对，例： ```array("score" => "1
 ```
 此方法可以对某一个SQL连接中的数据表中符合匹配规则的项进行更新操作，返回一个SendQuery后的结果
 
-### 5.从数据表中删除数据：
+### 从数据表中删除数据：
 使用方法：```$Class->Delete_Data($Connection, $TableName, $RequireArray)```
 
 变量解释：
@@ -118,7 +118,7 @@ $RequireArray：匹配规则，为数组键值对，例： ```array("score" => "
 ```
 此方法可以对某一个SQL连接中的数据表中符合匹配规则的项进行删除操作，一般没有返回，有错误返回错误信息
 
-### 6.对 SQL Object 进行解析并整合到 List 中：
+### 对 SQL Object 进行解析并整合到 List 中：
 使用方法：```$Class->Fetch_Assoc($SQLObject)```
 
 变量解释：
