@@ -19,7 +19,7 @@ WDK_SQL
 require("{path}/wdk-v1.0.php");
 $SQL = new WDK_SQL;
 ```
-此代码可以让您初始化一个 WDK_SQL 对象，来访问 SQL 类的功能，关于其他的初始化，只需要将 ```WDK_SQL``` 换成其他类名即可
+此代码可以让您初始化一个 WDK_SQL，来访问 SQL 类的功能，关于其他的初始化，只需要将 ```WDK_SQL``` 换成其他类名即可
 
 ## Web 类的使用
 需要初始化 Web 类，我们为您提供了以下方法：
